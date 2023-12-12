@@ -1,0 +1,16 @@
+> InitiatedAt [lifecycleState ActivityInstanceId ActivityConceptName CaseConceptName = started] T
+	HappensAt [start ActivityInstanceId ActivityConceptName CaseConceptName] T
+
+> InitiatedAt [lifecycleState ActivityInstanceId ActivityConceptName CaseConceptName = completed] T
+	HappensAt [complete ActivityInstanceId ActivityConceptName CaseConceptName] T
+
+> InitiatedAt [tr CaseConceptName = pending] T
+	HappensAt [start ActivityInstanceId register CaseConceptName] T
+	
+> InitiatedAt [tr CaseConceptName = pending] T
+	HappensAt [complete ActivityInstanceId register CaseConceptName] T
+		
+> InitiatedAt [tr CaseConceptName = satisfied] T2
+	HappensAt [complete ActivityInstanceId inform_user CaseConceptName] T2
+	ThresholdLess T2 618540000
+

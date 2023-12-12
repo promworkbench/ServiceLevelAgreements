@@ -1,0 +1,16 @@
+> InitiatedAt [lifecycleState ActivityInstanceId ActivityConceptName CaseConceptName = started] T
+	HappensAt [start ActivityInstanceId ActivityConceptName CaseConceptName] T
+
+> InitiatedAt [lifecycleState ActivityInstanceId ActivityConceptName CaseConceptName = completed] T
+	HappensAt [complete ActivityInstanceId ActivityConceptName CaseConceptName] T
+	
+
+> InitiatedAt [constraint1 CaseConceptName = pending] T
+	HappensAt [start ActivityInstanceId a CaseConceptName] T
+> InitiatedAt [constraint1 CaseConceptName = pending] T
+	HappensAt [complete ActivityInstanceId a CaseConceptName] T
+> TerminatedAt [constraint1 CaseConceptName = pending] T
+	HappensAt [start ActivityInstanceId b CaseConceptName] T
+> TerminatedAt [constraint1 CaseConceptName = pending] T
+	HappensAt [complete ActivityInstanceId b CaseConceptName] T
+	

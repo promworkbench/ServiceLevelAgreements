@@ -1,0 +1,40 @@
+InstantEvents {
+    Input: [start 3]
+    Input: [complete 3]
+}
+
+Fluents {
+    Simple: [lifecycleState 3 = started]
+    Simple: [lifecycleState 3 = completed]
+
+    Simple: [tr 1 = pending]
+    Simple: [tr 1 = satisfied]
+    Simple: [tr 1 = violated]
+}
+
+InputEntities {
+    InputStart 3:
+    	[start]
+    InputComplete 3:
+    	[complete]
+}
+
+BuiltEntities {
+	ActivityInstanceActivityCase 3:
+		[InputStart()]
+		[InputComplete()]
+	Instance 1:
+		[InputStart(0,1)]
+		[InputComplete(0,1)]
+	Activity 1:
+		[InputStart(1,2)]
+		[InputComplete(1,2)]
+	Case 1:
+		[InputStart(2,3)]
+		[InputComplete(2,3)]
+}
+
+CachingOrder {
+    [lifecycleState 3 = _]	-> ActivityInstanceActivityCase
+    [tr 1 = _] -> Case
+}

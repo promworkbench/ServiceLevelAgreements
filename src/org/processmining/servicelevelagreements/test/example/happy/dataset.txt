@@ -1,0 +1,8 @@
+HappensAt [go_to chris work] 9
+HappensAt [win_lottery chris] 13
+HappensAt [go_to chris pub] 17
+HappensAt [lose_wallet chris] 19
+HappensAt [go_to chris home] 21
+HappensAt [go_to chris pub] 30
+HappensAt [win_lottery chris] 24
+HappensAt [go_to chris home] 31

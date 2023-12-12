@@ -1,0 +1,6 @@
+HappensAt [start instance1 a case1] 83
+HappensAt [start instance3 c case1] 117
+HappensAt [start instance2 b case1] 105
+HappensAt [complete instance3 c case1] 139
+HappensAt [complete instance1 a case1] 95
+HappensAt [complete instance2 b case1] 116

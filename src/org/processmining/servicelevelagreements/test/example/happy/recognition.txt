@@ -1,0 +1,31 @@
+ER: (-40-10]
+
+
+loc(chris)=work,[(10,inf)]
+
+ER: (-30-20]
+
+
+loc(chris)=pub,[(18,inf)]
+rich(chris)=true,[(14,20)]
+loc(chris)=work,[(10,18)]
+happy(chris)=true,[(14,inf)]
+
+ER: (-20-30]
+
+
+loc(chris)=pub,[(18,22),(31,inf)]
+rich(chris)=true,[(14,20),(25,inf)]
+loc(chris)=work,[(10,18)]
+loc(chris)=home,[(22,31)]
+happy(chris)=true,[(14,22),(25,inf)]
+
+ER: (-10-40]
+
+
+loc(chris)=pub,[(18,22),(31,32)]
+rich(chris)=true,[(14,20),(25,inf)]
+loc(chris)=work,[(10,18)]
+loc(chris)=home,[(22,31),(32,inf)]
+happy(chris)=true,[(25,22),(25,inf)]
+

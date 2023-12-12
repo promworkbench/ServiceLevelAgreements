@@ -1,0 +1,33 @@
+InstantEvents {
+	Input: [go_to 2]
+	Input: [lose_wallet 1]
+	Input: [win_lottery 1]
+}
+
+Fluents {
+	Simple: [loc 1 = home]
+	Simple: [loc 1 = work]
+	Simple: [loc 1 = pub]
+	Simple: [rich 1 = true]
+	OutputSD: [happy 1 = true]
+}
+
+InputEntities {
+	InputPerson 1:
+		[lose_wallet]
+		[win_lottery]
+	InputGoTo 2:
+		[go_to]
+}
+
+BuiltEntities {
+	Person 1:
+		[InputPerson()]
+		[InputGoTo(0,1)]
+}
+
+CachingOrder {
+	[loc 1 = _]			-> Person
+	[rich 1 = _]		-> Person
+	[happy 1 = _]		-> Person
+}		

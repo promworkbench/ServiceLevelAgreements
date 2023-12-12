@@ -1,0 +1,43 @@
+ER: (0-139]
+
+
+lifecycleState(instance3,c,case1)=completed,[(140,inf)]
+lifecycleState(instance1,a,case1)=completed,[(96,inf)]
+lifecycleState(instance2,b,case1)=completed,[(117,inf)]
+constraint1(case1)=pending,[(84,106)]
+lifecycleState(instance2,b,case1)=started,[(106,117)]
+lifecycleState(instance1,a,case1)=started,[(84,96)]
+lifecycleState(instance3,c,case1)=started,[(118,140)]
+
+ER: (0-139]
+
+
+lifecycleState(instance3,c,case1)=completed,[(149,inf)]
+lifecycleState(instance1,a,case1)=completed,[(105,inf)]
+lifecycleState(instance2,b,case1)=completed,[(126,inf)]
+constraint1(case1)=pending,[(93,115)]
+lifecycleState(instance2,b,case1)=started,[(115,126)]
+lifecycleState(instance1,a,case1)=started,[(93,105)]
+lifecycleState(instance3,c,case1)=started,[(127,149)]
+
+ER: (0-139]
+
+
+lifecycleState(instance3,c,case1)=completed,[(140,inf)]
+lifecycleState(instance1,a,case1)=completed,[(96,inf)]
+lifecycleState(instance2,b,case1)=completed,[(117,inf)]
+constraint1(case1)=pending,[(84,106)]
+lifecycleState(instance2,b,case1)=started,[(106,117)]
+lifecycleState(instance1,a,case1)=started,[(84,96)]
+lifecycleState(instance3,c,case1)=started,[(118,140)]
+
+ER: (83-139]
+
+
+lifecycleState(instance3,c,case1)=completed,[(140,inf)]
+lifecycleState(instance1,a,case1)=completed,[(96,inf)]
+lifecycleState(instance2,b,case1)=completed,[(117,inf)]
+constraint1(case1)=pending,[(96,106)]
+lifecycleState(instance2,b,case1)=started,[(106,117)]
+lifecycleState(instance3,c,case1)=started,[(118,140)]
+
