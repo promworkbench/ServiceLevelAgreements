@@ -21,13 +21,10 @@
        <dependency org="org.eclipse.collections" name="eclipse-collections" rev="7.1.0" />
        <dependency org="org.scala-lang.modules" name="scala-parser-combinators_2.12" rev="1.0.6" />
        <dependency org="org.dom4j" name="dom4j" rev="2.0.1"/>
-       <dependency org="commons-validator" name="commons-validator" rev="1.6"/>      
+       <dependency org="commons-validator" name="commons-validator" rev="1.6" />      
 
-	<dependency conf="lib->default" org="org.apache.logging.log4j" name="log4j-api" rev="2.16.0" />
-	<dependency conf="lib->default" org="org.apache.logging.log4j" name="log4j-core" rev="2.16.0" />
-	<dependency conf="lib->default" org="org.apache.logging.log4j" name="log4j-slf4j-impl" rev="2.16.0" />
-	<dependency conf="lib->default" org="org.slf4j" name="slf4j-api" rev="1.7.25"/>
-	    
+       <dependency conf="lib->default" org="org.apache.logging.log4j" name="log4j-1.2-api" rev="2.16.0" />
+       <dependency conf="lib->default" org="org.apache.logging.log4j" name="log4j-api" rev="2.16.0"/>
        <!-- Unused -->
        <!-- JPL is a Java interface to Prolog -->
        <!-- <dependency org="jpl" name="jpl" rev="7.4.0" /> -->
